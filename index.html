@@ -57,13 +57,61 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://raw.githubusercontent.com/nerdzao/academy/nerdflix/front/angular/src/assets/movies/1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item-img">
+                    <img src="https://raw.githubusercontent.com/nerdzao/academy/nerdflix/front/angular/src/assets/movies/1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item-content mt-5">
+                    <h3> Filme 1 </h3>
+                    <p> Lorem Ipsum </p>
+                    <div>
+                        <button type="button" class="btn btn-danger">
+                            <i class="fa fa-play fa-1x"></i>
+                            Assistir
+                        </button>
+                        <button type="button" class="btn btn-dark">
+                            <i class="fa fa-plus fa-1x"></i>
+                                Minha lista
+                        </button>
+                    </div>
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="https://raw.githubusercontent.com/nerdzao/academy/nerdflix/front/angular/src/assets/movies/2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item-img">
+                    <img src="https://raw.githubusercontent.com/nerdzao/academy/nerdflix/front/angular/src/assets/movies/2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item-content mt-5">
+                    <h3> Filme 2 </h3>
+                    <p> Lorem Ipsum </p>
+                    <div>
+                        <button type="button" class="btn btn-danger">
+                                <i class="fa fa-play fa-1x"></i>
+                                Assistir
+                            </button>
+                        <button type="button" class="btn btn-dark">
+                                <i class="fa fa-plus fa-1x"></i>
+                                    Minha lista
+                            </button>
+                    </div>
+                </div>
             </div>
             <div class="carousel-item">
-                <img src="https://raw.githubusercontent.com/nerdzao/academy/nerdflix/front/angular/src/assets/movies/3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item-img">
+                    <img src="https://raw.githubusercontent.com/nerdzao/academy/nerdflix/front/angular/src/assets/movies/3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item-content mt-5">
+                    <h3> Filme 3 </h3>
+                    <p> Lorem Ipsum </p>
+                    <div>
+                        <button type="button" class="btn btn-danger">
+                                    <i class="fa fa-play fa-1x"></i>
+                                    Assistir
+                                </button>
+                        <button type="button" class="btn btn-dark">
+                                    <i class="fa fa-plus fa-1x"></i>
+                                        Minha lista
+                                </button>
+                    </div>
+                </div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -156,6 +204,33 @@
         
          ::-webkit-scrollbar {
             display: none;
+        }
+        
+        .carousel-item-img {
+            max-height: 60vh;
+        }
+        
+        .carousel-item-img img {
+            width: 100%;
+            opacity: 0.3;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+        }
+        
+        .carousel-item-content {
+            text-align: left;
+            top: 10vh;
+            position: absolute;
+            right: 15%;
+            bottom: 20px;
+            left: 15%;
+            z-index: 9999;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: white;
         }
     </style>
 </body>
